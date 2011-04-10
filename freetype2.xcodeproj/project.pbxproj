@@ -1217,8 +1217,8 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
-					../freetype2/include/,
-					../freetype2/src/,
+					include/,
+					src/,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				MACH_O_TYPE = staticlib;
@@ -1240,8 +1240,8 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
-					../freetype2/include/,
-					../freetype2/src/,
+					include/,
+					src/,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				MACH_O_TYPE = staticlib;
