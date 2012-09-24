@@ -1,11 +1,15 @@
 #!/bin/sh
 
-xcodebuild -configuration Release -sdk iphoneos4.3 -alltargets clean
-xcodebuild -configuration Release -sdk iphoneos4.3 -alltargets build
-cp build/Release-iphoneos/libFreetype2.a ./libFreetype2-arm.a
+BUILD_DIR="build/Release-iphoneos"
 
-xcodebuild -configuration Release -sdk iphonesimulator4.3 -alltargets clean
-xcodebuild -configuration Release -sdk iphonesimulator4.3 -alltargets build
-cp build/Release-iphonesimulator/libFreetype2.a ./libFreetype2-sim.a
+xcodebuild -configuration Release -sdk iphoneos6.0 -alltargets clean CONFIGURATION_BUILD_DIR=$BUILD_DIR
+xcodebuild -configuration Release -sdk iphoneos6.0 -alltargets build CONFIGURATION_BUILD_DIR=$BUILD_DIR
+cp $BUILD_DIR/libFreetype2.a ./libFreetype2-arm.a
+
+BUILD_DIR="build/Release-iphonesimulator"
+
+xcodebuild -configuration Release -sdk iphonesimulator6.0 -alltargets clean CONFIGURATION_BUILD_DIR=$BUILD_DIR
+xcodebuild -configuration Release -sdk iphonesimulator6.0 -alltargets build CONFIGURATION_BUILD_DIR=$BUILD_DIR
+cp $BUILD_DIR/libFreetype2.a ./libFreetype2-sim.a
 
 lipo -output libFreetype2.a -create libFreetype2-arm.a -arch i386 libFreetype2-sim.a
