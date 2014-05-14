@@ -1166,19 +1166,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_SYMBOL_SEPARATION = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_THUMB_SUPPORT = YES;
-				GCC_VERSION = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PREBINDING = YES;
 				PRODUCT_NAME = Freetype2;
 				WARNING_CFLAGS = (
 					"-Wextra",
@@ -1191,22 +1184,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_THUMB_SUPPORT = YES;
-				GCC_VERSION = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = Freetype2;
 				WARNING_CFLAGS = (
 					"-Wextra",
 					"-Wall",
 				);
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1219,14 +1206,13 @@
 					"FT2_BUILD_LIBRARY=1",
 					DARWIN_NO_CARBON,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					include/,
 					src/,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1242,7 +1228,7 @@
 					"FT2_BUILD_LIBRARY=1",
 					DARWIN_NO_CARBON,
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					include/,
 					src/,
