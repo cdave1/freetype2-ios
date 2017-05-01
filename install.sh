@@ -8,4 +8,4 @@ xcodebuild -configuration Release -sdk iphonesimulator -alltargets clean
 xcodebuild -configuration Release -sdk iphonesimulator -alltargets build
 cp build/Release-iphonesimulator/libFreetype2.a ./libFreetype2-sim.a
 
-lipo -output libFreetype2.a -create libFreetype2-arm.a -arch i386 libFreetype2-sim.a
+lipo -output libFreetype2.a -create libFreetype2-arm.a libFreetype2-sim.a
