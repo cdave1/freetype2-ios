@@ -1321,6 +1321,7 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = Freetype2;
+				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
 					"-Wextra",
 					"-Wall",
@@ -1338,6 +1339,7 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = Freetype2;
+				SKIP_INSTALL = YES;
 				WARNING_CFLAGS = (
 					"-Wextra",
 					"-Wall",
